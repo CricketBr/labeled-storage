@@ -8,7 +8,7 @@ Compatible with Warehousing, Nullius, SeaBlock, Angel's Addons - Storage, Bob's 
 
 It should be fairly easy to add compatibility with other mods. To do this, either contact me to add directly to this mod, or add code to your mod that calls this mod's functions.
 	
-Suggested Use for Labeled Storage for Train Stations
+## Suggested Use for Labeled Storage for Train Stations
 
 You do NOT need a base-wide inventory with this system.
 
