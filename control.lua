@@ -22,6 +22,7 @@ local function decipher_ls_mc_name(oname)
 
     local R = {}
 
+
     R.basename = string.sub(oname, 10, -5)
     R.letter = string.sub(oname, -3, -2)
     R.number = tonumber(string.sub(oname, -1, -1)) -- need number to do math
@@ -52,6 +53,10 @@ local function change_storage_label(event)
         return
     end
     L.oldname = targetentity.name
+    if string.sub(L.oldname, 1, 6) ~= 'cb-ls-' then
+        local b=1
+        return
+    end
     -- L.oldlocal_name = targetentity.localised_name
 
     if targetentity.type == 'entity-ghost' then

@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 2024-08-08
+  BugFixes:
+    - Added condition that chest has to exist. Nullius removed some containers added by Bob's Logistics, but they were still sent to the container-maker.
+    - Changed require format for cb-library and internal code to `local x = require(file)` instead of a global function.
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2024-07-xx
   Major Features:

@@ -6,10 +6,12 @@
 -- other is req/prov in labeled-storage
 -- entity changes
 
-require('prototypes.cb-labeled-storage-functions')
+local lsfns = require('cb-labeled-storage-functions')
 
 if not cb then cb = {} end
 if not cb.ls then cb.ls = {} end
+
+local cbimage = require('__cb-library__/cb_image_functions')
 
 data:extend(
     {
@@ -26,12 +28,12 @@ if settings.startup['cb-ls-many-containers'].value then
     -- make the item-group image and tab
     local new_layers =
     {
-        { file = 'a-square.png',      tint = cb.lib.tints.P,      scale = 1, },
-        { file = 'a-square.png',      tint = cb.lib.tints.ltgrey, scale = .75, },
-        { file = 'a-tri-topleft.png', tint = cb.lib.tints.dkgrey, scale = 1, },
-        { file = 'X.png',             tint = cb.lib.tints.dkgrey, scale = .75 }
+        { file = 'a-square.png',      tint = cbimage.tints.P,      scale = 1, },
+        { file = 'a-square.png',      tint = cbimage.tints.ltgrey, scale = .75, },
+        { file = 'a-tri-topleft.png', tint = cbimage.tints.dkgrey, scale = 1, },
+        { file = 'X.png',             tint = cbimage.tints.dkgrey, scale = .75 }
     }
-    local llayers = cb.lib.make_layers({}, new_layers)
+    local llayers = cbimage.make_layers({}, new_layers)
 
 
     data:extend(

@@ -1,5 +1,5 @@
 -- require('__cb-library__/cb-image-functions')
-require('prototypes.cb-labeled-storage-functions')
+-- require('prototypes.cb-labeled-storage-functions')
 
 -- require('__flib__/data-util')
 local flib_data_util = require("__flib__.data-util")
@@ -7,6 +7,8 @@ local flib_data_util = require("__flib__.data-util")
 
 if not cb then cb = {} end
 if not cb.ls then cb.ls = {} end
+
+local lsfns = require ('cb-labeled-storage-functions')
 
 
 
@@ -22,14 +24,14 @@ if settings.startup['cb-ls-tiny-chests'].value then
     -- Nullius
     if mods['nullius'] then
         cb.ls.skip_base_log_chests = true
-        cb.ls.tiny_chests(
+        lsfns.tiny_chests(
             {
                 { basename = 'nullius-small-storage-chest-1', letter = 'S' },
 
             },
             'nullius-robotics-1'
         )
-        cb.ls.tiny_chests(
+        lsfns.tiny_chests(
             {
                 { basename = 'nullius-small-supply-chest-1', letter = 'P' },
             },
@@ -43,7 +45,7 @@ if settings.startup['cb-ls-tiny-chests'].value then
     if not cb.ls.skip_base_log_chests then
         -- base_game
         -- todo does SB use the base game lowest log chests?
-        cb.ls.tiny_chests(
+        lsfns.tiny_chests(
             {
                 { basename = 'logistic-chest-passive-provider', letter = 'P' },
                 { basename = 'logistic-chest-storage',          letter = 'S' },
@@ -65,7 +67,7 @@ if settings.startup['cb-ls-logistic-labels'].value then
 
     -- cb.ls.skip_base_chest_labels SET IF YOUR MOD OR MODPACK CHANGES VANILLA CONTAINERS
 
-    cb.ls.logistic_labels()
+    lsfns.logistic_labels()
 end
 
 
@@ -181,7 +183,7 @@ if settings.startup['cb-ls-many-containers'].value then
 
 
 
-    cb.ls.make_all_labst(list)
+    lsfns.make_all_labst(list)
 
     local b = 1
 end

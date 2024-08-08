@@ -1,4 +1,4 @@
-Adds labels to logistics chests, so you don't need to see colours to identify the chests.
+Adds labels to logistics chests, so you don't need to use colours to identify the chests.
 
 Adds tiny provider and storage chests, 1, 2 and 3 stacks large, so you can downgrade chests instead of setting limits. They upgrade to regular provider and storage chests.
 
@@ -7,6 +7,10 @@ Adds new entities with labels, so their purpose is clear when using Factory Sear
 Compatible with Warehousing, Nullius, SeaBlock, Angel's Addons - Storage, Bob's Plates, Bob's Logistics, and Angel's Petrochem.
 
 It should be fairly easy to add compatibility with other mods. To do this, either contact me to add directly to this mod, or add code to your mod that calls this mod's functions.
+
+## Compatability
+
+Currently only Seablock, Angel/Bob's and Nullius are supported, and only some of the containers within those mods. Please let me know if you want more added. I need to know which mods are active and which tech makes the container.
 	
 ## Suggested Use for Labeled Storage for Train Stations
 
