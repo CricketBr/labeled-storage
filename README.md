@@ -1,4 +1,4 @@
-Adds labels to logistics chests, so you don't need to use colours to identify the chests.
+Adds labels to logistics chests, so you don't need to use colours to identify the chests, in the game Factorio.
 
 Adds tiny provider and storage chests, 1, 2 and 3 stacks large, so you can downgrade chests instead of setting limits. They upgrade to regular provider and storage chests.
 
